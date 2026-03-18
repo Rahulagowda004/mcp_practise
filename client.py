@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-llm = ChatGroq(model="openai/gpt-oss-120b", temperature=0.9)
+llm = ChatGroq(model="openai/gpt-oss-120b")
 
 async def main():
     client = MultiServerMCPClient(
